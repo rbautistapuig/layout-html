@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html LANG="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>actividad_layouts</title>
+    <style ref="/style.css">
+        img {width: 80px}
+        #span {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5cm;
+            margin-bottom: 1.5cm;
+            color:white;
+        }
+        img {
+            display: flex;
+            flex-direction: column;
+        }
+        .welcome {
+            display: flex;
+            height: 7cm;
+            font-size: 1.5em;
+            background-color: grey;
+            justify-content: center;
+            align-items: center;
+            color:white
+        }
+        html,body {
+            background-color: #001f3f;
+            color:white
+        }
+    </style>
+  </head>
+<body>
+    <div id="span">
+        <span>🤖</span>
+        <span>RobotWeb</span>
+        <span>🔎</span>
+    </div>
+
+
+<img src="https://gerardfp.github.io/htmllayout/img/1.webp">
+<img src="https://gerardfp.github.io/htmllayout/img/2.webp">
+<img src="https://gerardfp.github.io/htmllayout/img/3.webp">
+<img src="https://gerardfp.github.io/htmllayout/img/4.webp">
+
+<p class="welcome">Welcome to RobotWeb</p> 
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_2 {
+        resize: both;
+        overflow: auto;
+        background-color: lightskyblue;
+        display: flex;
+        justify-content: center;
+    
+    }
+    caja_2 div {
+        background-color: blanchedalmond;
+        color: black;
+    }
+</style>
+
+<h2>Ejercicio 2</h2>
+
+<caja_2>
+    <div>
+        <p>Estoy siempre centrado</p>
+    </div>
+</caja_2>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_3 {
+        resize: both;
+        overflow: auto;
+        background-color: lightskyblue;
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    caja_3 div {
+        background-color: blanchedalmond;
+        color:black;
+        flex: 0 1 150px;
+        margin: 5px;
+    }
+</style>
+
+<h2>Ejercicio 3</h2>
+
+<caja_3>
+    <div>
+        <p>Crezco hacia abajo y tengo un ancho máximo de 150px</p>
+    </div>
+    <div>
+        <p>Crezco hacia abajo y tengo un ancho máximo de 150px</p>
+    </div>
+    <div>
+        <p>Crezco hacia abajo y tengo un ancho máximo de 150px</p>
+    </div>
+</caja_3>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_4 {
+        resize:both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: minmax(150px, 25%) 1fr;
+    }
+    caja_4 div1 {
+        background-color: lightyellow;
+        color:black
+    }
+    caja_4 div2 {
+        background-color: lightpink;
+        color:black;
+    }
+</style>
+
+<h2>Ejercicio 4</h2>
+
+<caja_4>
+    <div1>
+        <p>Tengo un ancho mínimo de 150px, y un máximo del 25%</p>
+    </div1>
+    <div2>
+        <p>Ocupo el resto de espacio sobrante</p>
+    </div2>
+</caja_4>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_5 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    caja_5 div1{
+        background-color: lightyellow;
+        color: black;
+    }
+    caja_5 div2{
+        background-color: lightsalmon;
+        color: black;
+    }
+    caja_5 div3{
+        background-color: lightpink;
+        color: black;
+    }
+</style>
+
+<h2>Ejercicio 5</h2>
+
+<caja_5>
+    <div1>
+        <p>Ocupo solo la altura que necesito</p>
+    </div1>
+    <div2>
+        <p>Ocupo el resto de altura sobrante</p>
+    </div2>
+    <div3>
+        <p>Ocupo solo la altura que necesito</p>
+    </div3>
+</caja_5>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_6 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: minmax(150px, 25%) 1fr minmax(150px, 25%);
+        grid-template-rows: auto 1fr auto;
+    }
+    caja_6 div1 {
+        background-color: lightpink;
+        color: black;
+        grid-column: 1/4;
+    }
+    caja_6 div2 {
+        background-color: aqua;
+        color: black;
+    }
+    caja_6 div3 {
+        background-color: lightsalmon;
+        color: black;
+    }
+    caja_6 div4 {
+        background-color: lightyellow;
+        color: black;
+    }
+    caja_6 div5 {
+        background-color: lightgreen;
+        color: black;
+        grid-column: 1/4;
+    }
+</style>
+
+<h2>Ejercicio 6</h2>
+
+<caja_6>
+    <div1>
+        <p>Ocupo solo la altura que necesito </p>
+    </div1>
+    <div2>
+        <p>Ocupo el ancho que necesito, y crezco de altura</p>
+    </div2>
+    <div3>
+        <p>Ocupo el ancho restante, y crezco de altura </p>
+    </div3>
+    <div4>
+        <p>Ocupo el ancho que necesito, y crezco de altura </p>
+    </div4>
+    <div5>
+        <p>Ocupo solo la altura que necesito </p>
+    </div5>
+</caja_6>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_7 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    caja_7 div1 {
+        background-color: lightpink;
+        color: black;
+    }
+    caja_7 div2 {
+        background-color: aliceblue;
+        color: black;
+    }
+    caja_7 div3 {
+        background-color: lightsalmon;
+        color: black;
+    }
+    caja_7 div4 {
+        background-color: lightyellow;
+        color: black;
+    }
+</style>
+
+<h2>Ejercicio 7</h2>
+
+<caja_7>
+    <div1>
+        <p>Tenemos un ancho mínimo de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div1>
+    <div2>
+        <p>Tenemos un ancho mínimo de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div2>
+    <div3>
+        <p>Tenemos un ancho mínimo de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div3>
+    <div4>
+        <p>Tenemos un ancho mínimo de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div4>
+</caja_7>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_8 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        border: 5px blue;
+        padding: 200px;
+    }
+    caja_8 div1 {
+        background-color: lightpink;
+        color: black;
+    }
+    caja_8 div2{
+        background-color: aqua;
+        color: black;
+    }
+    caja_8 div3 {
+        background-color: lightsalmon;
+        color: black;
+    }
+    caja_8 div4 {
+        background-color: lightyellow;
+        color: black;
+    }
+</style>
+
+<h2>Ejercicio 8</h2>
+
+<caja_8>
+    <div1>
+        <p>Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div1>
+    <div2>
+        <p>Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div2>
+    <div3>
+        <p>Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div3>
+    <div4>
+        <p>Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div4>
+</caja_8>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+</body>
